@@ -1,8 +1,15 @@
 language: erlang
-before_script:
-  - kerl list installations
 matrix:
   include:
     - os: linux
+      otp_release: 19.0
+    - os: linux
+      otp_release: 19.1
+    - os: linux
+      otp_release: 19.2
+    - os: linux
       otp_release: 19.3
-
+    - os: linux
+      otp_release: 20.0
+    - os: linux
+      otp_release: 20.1
